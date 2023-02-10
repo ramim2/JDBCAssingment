@@ -21,7 +21,8 @@ public class Test {
 						s=con.createStatement();
 						s.executeUpdate(qry);
 				}
-					catch(ClassNotFoundException e) {
+					catch(ClassNotFoundException e) 
+					      {
 						e.printStackTrace();
 						
 						}
