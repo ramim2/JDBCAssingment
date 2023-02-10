@@ -59,7 +59,7 @@ public class Test {
 						Class.forName("com.mysql.cj.jdbc.Driver");
 						con=DriverManager.getConnection(url,username,password);
 						
-						ps=con.prepareStatement("insert into Employee(eno,ename,esal) values (?,?,?)");//insert into employee(eno,fname,lname,esal)values(?,?,?,?)//
+						ps=con.prepareStatement("insert into Employee(eno,ename,esal) values (?,?,?)");
 						ps.setInt(1, eno);
 						ps.setString(2, ename);
 						ps.setInt(3, esal);
